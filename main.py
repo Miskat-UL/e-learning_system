@@ -1,5 +1,3 @@
-#tofayel start the project now!
-
 from utils import student
 from utils import teacher
 
@@ -34,7 +32,7 @@ def account_create():
     choice = input('''
                 ***select the specific one***
                     -press 1 for student
-                    -press 2 for student
+                    -press 2 for teacher
                 ''')
     
 
@@ -45,7 +43,7 @@ def account_create():
             teacher.account_create_data()
         else:
             print('Unknown command!. please try again')
-        
+
 
 def login_data():
     print('Welcome to our system. Please fill up the information below for opening a account. ')
@@ -62,8 +60,6 @@ def login_data():
             teacher.log_data()
         else:
             print('Unknown command!. please try again')
-
-
 
 
 menu()
