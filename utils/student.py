@@ -5,11 +5,15 @@ file_name = 'student_json_data.json'
 
 def account_create_data():
     name = input("enter your name: ")
-    age= input("enter your age: ")
+    age = input("enter your age: ")
+    class_name = input('enter class')
+    address = input('enter your address:')
 
     context = {
         'name': name,
-        'age': age
+        'age': age,
+        'class_name': class_name,
+        'address': address
     }
 
     with open(file_name, 'r+') as file:
