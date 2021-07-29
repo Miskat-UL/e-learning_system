@@ -30,8 +30,9 @@ def menu():
 def account_create():
     print('Welcome to our system. Please fill up the information below for opening a account. ')
     choice = input('''
-                ***select the specific one***
+                     ***select the specific one***
                     -press 1 for student
+                
                     -press 2 for teacher
                 ''')
     
@@ -39,8 +40,10 @@ def account_create():
     while choice != 'q':
         if choice == '1':
             student.account_create_data()
+            break
         elif choice == '2':
             teacher.account_create_data()
+            break
         else:
             print('Unknown command!. please try again')
 
@@ -56,8 +59,10 @@ def login_data():
     while choice != 'q':
         if choice == '1':
             student.log_data()
+            break
         elif choice == '2':
             teacher.log_data()
+            break
         else:
             print('Unknown command!. please try again')
 
