@@ -35,7 +35,6 @@ def account_create():
                 
                     -press 2 for teacher
                 ''')
-    
 
     while choice != 'q':
         if choice == '1':
@@ -58,10 +57,10 @@ def login_data():
 
     while choice != 'q':
         if choice == '1':
-            student.log_data()
+            student.login_data()
             break
         elif choice == '2':
-            teacher.log_data()
+            teacher.login_data()
             break
         else:
             print('Unknown command!. please try again')
