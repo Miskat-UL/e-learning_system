@@ -1,0 +1,22 @@
+[
+  {
+    "name": "showmk",
+    "age": "123",
+    "class_name": [
+      "phy",
+      "che",
+      "bio"
+    ],
+    "address": "mdpur, dhaka"
+  },
+  {
+    "name": "sadi",
+    "age": "30",
+    "class_name": [
+      "CSE",
+      "IIT",
+      "Physics"
+    ],
+    "address": "old dhaka,1200"
+  }
+]
