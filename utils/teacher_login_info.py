@@ -1,8 +1,11 @@
 import json
 import random
 
-file_name = 'teacher_login_data.json'
+from file_outputs import Files
 
+te_login_file = 'teacher_login_data.json'
+
+_file = Files(te_login_file)
 
 def login_data(name):
     print("Now create an account....")
@@ -21,7 +24,7 @@ def login_data(name):
         'extra_key': extra_key,
 
     }
-    with open(file_name, 'r+') as file:
+    with open(te_login_file, 'r+') as file:
         data = json.load(file)
         data.append(context)
         file.seek(0)
@@ -33,4 +36,10 @@ def login_data(name):
 
 
 def login():
-    pass
+    username = input("Enter your username: ")
+    password = input("Enter your password: ")
+
+
+
+
+

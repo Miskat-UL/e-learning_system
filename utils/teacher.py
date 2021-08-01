@@ -1,6 +1,7 @@
 import json
-from utils import teacher_info
-file_name = 'teacher_json_data.json'
+from utils import teacher_login_info
+
+te_information_file = 'teacher_json_data.json'
 
 
 def account_create_data():
@@ -8,7 +9,7 @@ def account_create_data():
     age = input("enter your age: ")
     speciality = input("Enter the subjects you want to teach(separeted with commas): ").split(",")
     address = input('enter your address:')
-    teacher_info.login_data(name)
+    teacher_login_info.login_data(name)
 
     context = {
         'name': name,
@@ -17,7 +18,7 @@ def account_create_data():
         'address': address
     }
 
-    with open(file_name, 'r+') as file:
+    with open(te_information_file, 'r+') as file:
         data = json.load(file)
         data.append(context)
         file.seek(0)

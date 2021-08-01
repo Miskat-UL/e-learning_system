@@ -1,7 +1,7 @@
 import json
-from utils import student_info
+from utils import student_login_info
 
-file_name = 'student_json_data.json'
+se_information_file = 'student_json_data.json'
 
 
 def account_create_data():
@@ -9,7 +9,7 @@ def account_create_data():
     age = input("enter your age: ")
     class_name = input('enter class')
     student_address = input('enter your address:')
-    student_info.login_data()
+    student_login_info.login_data()
 
     context = {
         'name': name,
@@ -18,7 +18,7 @@ def account_create_data():
         'address': student_address
     }
 
-    with open(file_name, 'r+') as file:
+    with open(se_information_file, 'r+') as file:
         data = json.load(file)
         data.append(context)
         file.seek(0)

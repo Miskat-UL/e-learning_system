@@ -1,4 +1,4 @@
-from utils import student, teacher, teacher_info, student_info
+from utils import student, teacher, teacher_login_info, student_login_info
 
 
 
@@ -56,10 +56,10 @@ def login_section():
 
     while choice != 'q':
         if choice == '1':
-            student_info.login()
+            student_login_info.login()
             break
         elif choice == '2':
-            teacher_info.login()
+            teacher_login_info.login()
             break
         else:
             print('Unknown command!. please try again')

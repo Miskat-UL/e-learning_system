@@ -1,7 +1,7 @@
 import json
-file_name = 'student_login_data.json'
 
 
+st_login_file = 'student_login_data.json'
 def login_data():
     print("Now create an account....")
     email = input("enter your email: ")
@@ -13,7 +13,7 @@ def login_data():
         'password': password,
         'extra_key': extra_key
     }
-    with open(file_name, 'r+') as file:
+    with open(st_login_file, 'r+') as file:
         data = json.load(file)
         data.append(context)
         file.seek(0)
