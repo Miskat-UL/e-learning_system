@@ -7,6 +7,7 @@ te_login_file = 'teacher_login_data.json'
 
 _file = Files(te_login_file)
 
+
 def login_data(name):
     print("Now create an account....")
     email = input("enter your email: ")
@@ -39,7 +40,25 @@ def login():
     username = input("Enter your username: ")
     password = input("Enter your password: ")
 
+    file_content = _file.file_output()
+
+    for value in file_content:
+        prev_entry = False
+        while not prev_entry:
+            if value["username"] == username:
+                prev_entry = True
+                entry = False
+                while not entry:
+                    if value['password'] == password:
+                        entry = True
+                        print("success entry. Going to your profile!! ")
+                        login_after_menu()
+                    else:
+                        password = input("wrong password. Enter your password again: ")
+            else:
+                username = input("wrong username. Enter your username again: ")
 
 
 
-
+def login_after_menu():
+    print("Hello , Welcome to your profile!!! ")
