@@ -24,5 +24,3 @@ def account_create_data():
 
 
 
-def login_data():
-    pass

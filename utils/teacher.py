@@ -8,7 +8,7 @@ def account_create_data():
     age = input("enter your age: ")
     speciality = input("Enter the subjects you want to teach(separeted with commas): ").split(",")
     address = input('enter your address:')
-    teacher_info.login_data()
+    teacher_info.login_data(name)
 
     context = {
         'name': name,

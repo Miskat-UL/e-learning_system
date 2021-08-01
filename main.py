@@ -1,5 +1,4 @@
-from utils import student
-from utils import teacher
+from utils import student, teacher, teacher_info, student_info
 
 
 
@@ -57,10 +56,10 @@ def login_data():
 
     while choice != 'q':
         if choice == '1':
-            student.login_data()
+            student_info.login_data()
             break
         elif choice == '2':
-            teacher.login_data()
+            teacher_info.login_data()
             break
         else:
             print('Unknown command!. please try again')
