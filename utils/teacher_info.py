@@ -1,6 +1,6 @@
 import json
 import random
-import math
+
 file_name = 'teacher_login_data.json'
 
 
@@ -30,3 +30,7 @@ def login_data(name):
     print(f"Your username is: {username}")
     print(f"Your password is: {password}")
     print("do not forget your username and password")
+
+
+def login():
+    pass

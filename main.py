@@ -15,7 +15,7 @@ def menu():
         if user_input.lower() == 'c':
             account_create()
         elif user_input.lower() == 'l':
-            login_data()
+            login_section()
         else:
             print('Unknown Command! please try again..')
 
@@ -46,20 +46,20 @@ def account_create():
             print('Unknown command!. please try again')
 
 
-def login_data():
+def login_section():
     print('Welcome to our system. Please fill up the information below for opening a account. ')
     choice = input('''
                 ***select the specific one***
                     -press 1 for student
-                    -press 2 for student
+                    -press 2 for Teacher
                 ''')
 
     while choice != 'q':
         if choice == '1':
-            student_info.login_data()
+            student_info.login()
             break
         elif choice == '2':
-            teacher_info.login_data()
+            teacher_info.login()
             break
         else:
             print('Unknown command!. please try again')

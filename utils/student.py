@@ -1,4 +1,5 @@
 import json
+from utils import student_info
 
 file_name = 'student_json_data.json'
 
@@ -8,6 +9,7 @@ def account_create_data():
     age = input("enter your age: ")
     class_name = input('enter class')
     student_address = input('enter your address:')
+    student_info.login_data()
 
     context = {
         'name': name,

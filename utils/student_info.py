@@ -18,3 +18,7 @@ def login_data():
         data.append(context)
         file.seek(0)
         json.dump(data, file, indent=2)
+
+
+def login():
+    pass

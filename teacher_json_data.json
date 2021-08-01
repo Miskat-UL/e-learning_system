@@ -18,5 +18,15 @@
       "Physics"
     ],
     "address": "old dhaka,1200"
+  },
+  {
+    "name": "sadi",
+    "age": "30",
+    "class_name": [
+      "CSE",
+      "IIT",
+      "PYTHON"
+    ],
+    "address": "old dhaka, 1200"
   }
 ]
