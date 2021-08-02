@@ -9,7 +9,7 @@ def account_create_data():
     age = input("enter your age: ")
     class_name = input('enter class')
     student_address = input('enter your address:')
-    student_login_info.login_data()
+    student_login_info.login_data(name)
 
     context = {
         'name': name,

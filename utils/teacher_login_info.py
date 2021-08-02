@@ -19,7 +19,7 @@ def login_data(name):
     username = name
 
     context = {
-        'username': name,
+        'username': username,
         'email': email,
         'password': password,
         'extra_key': extra_key,
@@ -57,7 +57,6 @@ def login():
                         password = input("wrong password. Enter your password again: ")
             else:
                 username = input("wrong username. Enter your username again: ")
-
 
 
 def login_after_menu():
